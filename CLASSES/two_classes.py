@@ -12,14 +12,14 @@ class habitation:
 
     def prixParMetreCarre(self):
         a=self.__prix/self.superficie
-        print("Le prix par metre carré est : ",a, "€/m²")
+        print("Le prix par metre carré est : ",a, " euros/m²")
 
 
 
 
 class maison(habitation):
     def __str__(self):
-        return "Je suis une maison coûtant " +str(self.getPrix()) + "€"
+        return "Je suis une maison coûtant " +str(self.getPrix()) + " euros"
 
 
     def nbr_Etage(self,etage):
@@ -46,7 +46,7 @@ class maison(habitation):
 
 class appartement(habitation):
     def __str__(self):
-        return "Je suis un appartement coûtant " +str(self.getPrix()) + "€"
+        return "Je suis un appartement coûtant " +str(self.getPrix()) + " euros"
 
     def garage(self,garage):
         self.garage=garage
