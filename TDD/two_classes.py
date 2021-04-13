@@ -33,12 +33,15 @@ class maison(habitation):
     def avoirJardin(self):
         if self.jardin==1:
             print("Cette appartement possède un jardin")
+            return True
         else:
             print("Cette appartement ne possède pas de jardin")
+            return False
 
     def superficieParEtage(self):
-        superficieParEtage=self.superficie/self.nbrEtage
-        print("La surperficie moyenne par étage est : ",superficieParEtage, "m²/etage")
+        self.superficieParEtage=self.superficie/self.nbrEtage
+        print("La surperficie moyenne par étage est : ",self.superficieParEtage, "m²/etage")
+
 
 
 
@@ -64,55 +67,8 @@ class appartement(habitation):
             print("Cette appartement ne possède pas de garage")
 
     def superficieParPiece(self):
-        superficieparpiece = self.superficie/self.nbr_pieces
-        print("La surperficie moyenne par pièce est : ",superficieparpiece, "m²/pièce")
+        self.superficieparpiece = self.superficie/self.nbr_pieces
+        print("La surperficie moyenne par pièce est : ",self.superficieparpiece, "m²/pièce")
 
 
 
-print(" Definition d'un appartement")         
-appartement1=appartement(100,4,100000)
-print(appartement1)
-print("Superficie")
-print(appartement1.superficie, "m²")
-print("Nombre de pièces")
-print(appartement1.nbr_pieces)
-print("Prix")
-print(appartement1.getPrix())
-
-appartement1.prixParMetreCarre()
-print("definiton du numero d'étage")
-
-appartement1.numero_Etage(4)
-
-#      definition pas de garage
-
-appartement1.garage(0)
-appartement1.avoirGarage()
-
-appartement1.superficieParPiece()
-#
-
-print("Definition d'une maison") 
-
-maison1=maison(300,10,300000)
-print(maison1)
-print("Superficie")
-print(maison1.superficie,"m²")
-print("Nombre de pièces")
-print(maison1.nbr_pieces)
-print("Prix")
-print(maison1.getPrix())
-
-maison1.prixParMetreCarre()
-#        Definition du nombre d'étage
-
-maison1.nbr_Etage(2)
-
-
-#       Definition avoir jardin 
-
-maison1.jardin(1)
-maison1.avoirJardin()
-maison1.superficieParEtage()
-#
-#
