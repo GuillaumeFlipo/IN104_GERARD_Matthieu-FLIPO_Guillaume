@@ -15,7 +15,7 @@ class TestAppartement(unittest.TestCase):
 		self.assertTrue(self.appartTest.avoirGarage,"Cet appartement devrait avoir un garage")
 
 	def test_supParPiece(self):
-		self.assertEqual(self.appartTest.superficieParPiece(),25, "should be 20")
+		self.assertEqual(self.appartTest.superficieParPiece,25, "should be 20")
 
 	def test_etage(self):
 		self.assertEqual(self.appartTest.numeroEtage,5, "should be 5")

@@ -67,8 +67,8 @@ class appartement(habitation):
             print("Cette appartement ne possède pas de garage")
 
     def superficieParPiece(self):
-        self.superficieparpiece = self.superficie/self.nbr_pieces
-        print("La surperficie moyenne par pièce est : ",self.superficieparpiece, "m²/pièce")
+        self.superficieParPiece = self.superficie/self.nbr_pieces
+        print("La surperficie moyenne par pièce est : ",self.superficieParPiece, "m²/pièce")
 
 
 
